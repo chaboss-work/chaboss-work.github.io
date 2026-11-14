@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chaboss — 3D engine, Roblox systems, games</title>
+<meta name="description" content="chaboss builds its own 3D engine, ready-to-use Roblox Luau systems and small games. Videos, devlogs and the store in one place.">
+<meta property="og:title" content="chaboss — 3D engine, Roblox systems, games">
+<meta property="og:description" content="Our own neural 3D engine, tested Roblox Luau systems and small games. All links in one place.">
+<meta property="og:image" content="https://chaboss-work.github.io/assets/og.png">
+<meta property="og:url" content="https://chaboss-work.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e121c'/%3E%3Ctext x='32' y='45' font-family='Segoe UI,Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23ffc440'%3Ec%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #0e121c; --panel: #151b29; --line: #262e42; --text: #eceef3; --muted: #a3abbd;
+    --gold: #ffc440; --engine: #9b93ff; --kits: #3fcca0; --game: #5ac8fa;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body { margin: 0; color: var(--text); background: var(--bg);
+         font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 56px 0 28px; }
+  .mark { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; margin: 0; }
+  .bar { width: 72px; height: 5px; background: var(--gold); border-radius: 3px; margin: 10px 0 18px; }
+  .lead { max-width: 640px; color: var(--muted); font-size: 18px; margin: 0; }
+  .nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .nav a { text-decoration: none; font-size: 14px; padding: 6px 12px; border: 1px solid var(--line);
+           border-radius: 999px; color: var(--muted); }
+  .nav a:hover { color: var(--text); border-color: var(--muted); }
+  section { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: center;
+            background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+            padding: 24px; margin: 0 0 20px; }
+  section > * { min-width: 0; }
+  section img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+                border-radius: 10px; border: 1px solid var(--line); display: block; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em;
+         text-transform: uppercase; padding: 3px 10px; border-radius: 999px; margin-bottom: 10px; }
+  .engine .tag { color: var(--engine); background: rgba(155,147,255,0.12); }
+  .kits .tag { color: var(--kits); background: rgba(63,204,160,0.12); }
+  .game .tag { color: var(--game); background: rgba(90,200,250,0.12); }
+  h2 { font-size: 24px; line-height: 1.25; margin: 0 0 10px; }
+  p { margin: 0 0 14px; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; }
+  .chips a { text-decoration: none; font-size: 13px; padding: 4px 10px; border-radius: 8px;
+             background: rgba(63,204,160,0.10); color: #bff0df; border: 1px solid rgba(63,204,160,0.25); }
+  .chips a:hover { border-color: var(--kits); }
+  .btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn { text-decoration: none; font-size: 15px; font-weight: 600; padding: 10px 16px; border-radius: 10px;
+         border: 1px solid var(--line); color: var(--text); }
+  .btn:hover { border-color: var(--muted); }
+  .btn.main { background: var(--gold); color: #10131c; border-color: var(--gold); }
+  .btn.main:hover { filter: brightness(1.05); }
+  footer { color: var(--muted); font-size: 13px; padding: 12px 0 48px; }
+  footer p { font-size: 13px; margin: 4px 0; }
+  @media (max-width: 760px) {
+    header { padding-top: 36px; }
+    .mark { font-size: 36px; }
+    section { grid-template-columns: 1fr; padding: 16px; gap: 16px; }
+    section .media { order: -1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 class="mark">chaboss</h1>
+    <div class="bar"></div>
+    <p class="lead">A tiny game-tech studio. We build our own 3D engine, ready-to-use Roblox systems and small games, and we share the real numbers along the way.</p>
+    <nav class="nav" aria-label="All channels">
+      <a href="https://www.youtube.com/@chabossworld">YouTube · engine</a>
+      <a href="https://www.youtube.com/@bloxrundown">YouTube · Roblox systems</a>
+      <a href="https://www.tiktok.com/@bloxrundown">TikTok</a>
+      <a href="https://whop.com/chaboss?utm_source=chaboss_hub">Store</a>
+      <a href="https://t.me/chaboss_dev">Telegram devlog (RU)</a>
+      <a href="https://chaboss-work.itch.io/">itch.io</a>
+    </nav>
+  </header>
+
+  <section class="engine" id="engine">
+    <div>
+      <span class="tag">Engine</span>
+      <h2>A 3D engine where every object is a tiny neural network</h2>
+      <p>Written in Rust. Each shape is a small network that answers one question: how far is the surface from this point? We publish every step with measured milliseconds, including what is still too slow.</p>
+      <div class="btns">
+        <a class="btn main" href="https://youtu.be/T2oVJtql85Y">Watch the engine story</a>
+        <a class="btn" href="https://www.youtube.com/@chabossworld">YouTube channel</a>
+        <a class="btn" href="https://t.me/chaboss_dev">Devlog on Telegram (RU)</a>
+      </div>
+    </div>
+    <div class="media"><img src="assets/engine.jpg" alt="A field of 300 cows and shapes rendered by the chaboss engine" width="800" height="450" loading="lazy"></div>
+  </section>
+
+  <section class="kits" id="roblox">
+    <div>
+      <span class="tag">Roblox systems</span>
+      <h2>Roblox systems you can drop into your game</h2>
+      <p>Pets, RNG auras, tool saving with session locking, battlegrounds combat and remote protection. Every kit ships with its own tests and is checked in Roblox Studio before release.</p>
+      <div class="chips">
+        <a href="https://whop.com/chaboss/pet-system-kit-luau?utm_source=chaboss_hub">Pet System</a>
+        <a href="https://whop.com/chaboss/rng-aura-roll-kit-luau?utm_source=chaboss_hub">RNG Aura Roll</a>
+        <a href="https://whop.com/chaboss/inventory-tool-saving-kit-luau?utm_source=chaboss_hub">Inventory &amp; Tool Saving</a>
+        <a href="https://whop.com/chaboss/battlegrounds-combat-kit-luau?utm_source=chaboss_hub">Battlegrounds Combat</a>
+        <a href="https://whop.com/chaboss/remote-guard-luau?utm_source=chaboss_hub">Remote Guard</a>
+        <a href="https://whop.com/chaboss/roblox-kits-bundle-luau?utm_source=chaboss_hub">All kits bundle</a>
+      </div>
+      <div class="btns">
+        <a class="btn main" href="https://whop.com/chaboss?utm_source=chaboss_hub">Open the store</a>
+        <a class="btn" href="https://chaboss-work.itch.io/rng-aura-sampler-luau">Free RNG sampler</a>
+        <a class="btn" href="https://github.com/chaboss-work/roblox-odds">Free module on GitHub</a>
+        <a class="btn" href="https://www.youtube.com/@bloxrundown">Videos</a>
+      </div>
+    </div>
+    <div class="media"><img src="assets/kits.jpg" alt="Pet System kit in Roblox Studio: eggs with exact odds and hatched pets" width="800" height="450" loading="lazy"></div>
+  </section>
+
+  <section class="game" id="games">
+    <div>
+      <span class="tag">Games</span>
+      <h2>Cube Puzzle</h2>
+      <p>Paint every sphere in the cube. Levels get harder as you go. It plays right inside Telegram, nothing to install.</p>
+      <div class="btns">
+        <a class="btn main" href="https://t.me/ChabossCubePuzzleBot/play">Play in Telegram</a>
+      </div>
+    </div>
+    <div class="media"><img src="assets/game.jpg" alt="Cube Puzzle: coloured spheres arranged in a cube" width="800" height="450" loading="lazy"></div>
+  </section>
+
+  <footer>
+    <p>© 2026 chaboss. The Telegram devlog is in Russian; videos and products are in English.</p>
+    <p>Not affiliated with or endorsed by Roblox Corporation. Roblox is a trademark of Roblox Corporation.</p>
+  </footer>
+</div>
+</body>
+</html>
